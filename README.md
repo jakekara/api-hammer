@@ -19,6 +19,9 @@ conn = apihammer.connection(service="noaa")
 # get a valid api key (non-exhausted)
 k = conn.api_key()
 
+# make your API call...
+your_api_call_function(k) 
+
 ```
 
 # keys.json
