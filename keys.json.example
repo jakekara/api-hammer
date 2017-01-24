@@ -1,0 +1,14 @@
+[
+    {
+	"service":"noaa",
+	"key":"EXAMPLE_API_KEY_1",
+	"uname":"jkara@example.com",
+	"calls_per_day":10000
+    },
+    {
+	"service":"noaa",
+	"key":"EXAMPLE_API_KEY_2",
+	"uname":"donald@example.com",
+	"calls_per_day":10000	
+    }
+]
