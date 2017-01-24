@@ -2,7 +2,7 @@
 # jake kara
 # jake@jakekara.com
 
-import requests,json, datetime, time
+import json, datetime, time
 
 def today():
     return datetime.datetime.now().strftime("%Y-%m-%d")
