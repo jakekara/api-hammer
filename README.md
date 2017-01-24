@@ -1,8 +1,8 @@
 # API hammer
 
-A keychain module for handling multiple keys on the same API, potentially
-bypassing rate limits. Keeps track of requests per day, and when the limit
-is exhausted, uses another api key
+A proof-of-concept keychain module for handling multiple keys on the same
+API, potentially bypassing rate limits. Keeps track of requests per day,
+and when the limit is exhausted, uses another api key
 
 jake@jakekara.com
 
@@ -60,3 +60,21 @@ All this will do is force the api_key() method to sleep for 1/5 of a second
 before returning. Since your API request method should be dependent upon
 the return value of api_key(), this will cause your code to obey the API's
 calls-per-second rate limiting.
+
+# Issues
+
+#### Refactor remnants, proof of concept code
+
+There is some left-over code in apihammer from when I initially thought I
+might also use the module to make the api calls, but I realized that's not
+the best design. There are some methods that aren't used. I wanted to get
+the code out fast. Along those lines, I haven't exhaustively tested this.
+
+Since this code hasn't been tested much, please consider it a proof of concept.
+
+#### Be nice
+
+If some data provider is good enough to provide an API you should generally
+respect the nature of their rate limiting and not try to get around it. But
+sometimes you have to be a jerk.
+

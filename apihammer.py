@@ -1,6 +1,8 @@
-# apihammer.py - sometimes you can't be nice
+# apihammer.py - sometimes you can't be nice proof of concept keychain
+# module for querying API with multiple keys, potentially avoiding rate
+# limits
 # jake kara
-# jake@jakekara.com
+#jake@jakekara.com
 
 import json, datetime, time
 
