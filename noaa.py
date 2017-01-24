@@ -4,7 +4,6 @@
 import apihammer,json
 
 conn = apihammer.Connection(service="noaa")
-# conn.set_base_url("http://www.ncdc.noaa.gov/cdo-web/api/v2/")
 # conn.set_calls_per_second(5)
 
 vk = conn.valid_key()
